@@ -10,88 +10,88 @@
 </head>
 
 <body>
-    <div>
-        <h1>Форма реєстрації</h1>
-        <form action="register.php" method="get">
-            <fieldset>
+    <div class="container">
+        <h1 class="container__title">Форма реєстрації</h1>
+        <form class="registration-form" action="register.php" method="get">
+            <fieldset class="registration-form__list">
                 <legend>Обов'язкові</legend>
-                <div>
+                <div class="registration-form__list__item">
                     <label for="login">ПІБ:</label>
-                    <input id="login" name="login" type="text" required placeholder="Прізвище Ім'я по Батькові"
+                    <input class="registration-form__list__item__element" id="login" name="login" type="text" required placeholder="Прізвище Ім'я по Батькові"
                         minlength="6" maxlength="50">
                 </div>
-                <div>
+                <div class="registration-form__list__item">
                     <label for="email">Імейл:</label>
-                    <input id="email" name="email" placeholder="Імейл" type="email">
+                    <input class="registration-form__list__item__element" id="email" name="email" placeholder="Імейл" type="email">
                 </div>
-                <div>
+                <div class="registration-form__list__item">
                     <label for="password">Пароль:</label>
-                    <input id="password" name="password" minlength="7" maxlength="15" placeholder="Пароль"
+                    <input class="registration-form__list__item__element" id="password" name="password" minlength="7" maxlength="15" placeholder="Пароль"
                         type="password">
                 </div>
             </fieldset>
-            <fieldset>
+            <fieldset class="registration-form__list">
                 <legend>Додаткові</legend>
-                <div>
+                <div class="registration-form__list__item">
                     <label for="url">Адреса сайта</label>
-                    <input id="url" name="url" value="https://mysite.name">
+                    <input class="registration-form__list__item__element" id="url" name="url" value="https://mysite.name">
                 </div>
-                <div>
+                <div class="registration-form__list__item">
                     <label for="file">Ваше фото:</label>
-                    <input id="file" name="file" type="file">
+                    <input class="registration-form__list__item__element" id="file" name="file" type="file">
                 </div>
             </fieldset>
-            <fieldset>
+            <fieldset class="registration-form__list">
                 <legend>Дата народження</legend>
-                <div>
+                <div class="registration-form__list__item">
                     <label for="date">Ваша дата народження:</label>
-                    <input id="date" name="date" type="date">
+                    <input class="registration-form__list__item__element" id="date" name="date" type="date">
                 </div>
             </fieldset>
-            <fieldset>
+            <fieldset class="registration-form__list">
                 <legend>Стать</legend>
-                <div>
-                    <input id="man" type="radio" name="gender" value="man">
+                <div class="registration-form__list__item">
+                    <input class="registration-form__list__item--choice" id="man" type="radio" name="gender" value="man">
                     <label for="man">Чоловіча</label>
                 </div>
-                <div>
-                    <input id="woman" type="radio" name="gender" value="woman">
+                <div class="registration-form__list__item">
+                    <input class="registration-form__list__item--choice" id="woman" type="radio" name="gender" value="woman">
                     <label for="woman">Жіноча</label>
                 </div>
             </fieldset>
-            <fieldset>
+            <fieldset class="registration-form__list">
                 <legend>Улюблена кухня</legend>
-                <div>
-                    <input id="ua" checked name="kitchen" value="ukrainian" type="checkbox">
+                <div class="registration-form__list__item">
+                    <input class="registration-form__list__item--choice" id="ua" checked name="kitchen" value="ukrainian" type="checkbox">
                     <label for="ua">Українська</label>
                 </div>
-                <div>
-                    <input id="ital" checked name="kitchen" value="italian" type="checkbox">
+                <div class="registration-form__list__item">
+                    <input class="registration-form__list__item--choice" id="ital" checked name="kitchen" value="italian" type="checkbox">
                     <label for="ital">Італійська</label>
                 </div>
-                <div>
-                    <input id="usa" checked name="kitchen" value="amerian" type="checkbox">
+                <div class="registration-form__list__item">
+                    <input class="registration-form__list__item--choice" id="usa" checked name="kitchen" value="amerian" type="checkbox">
                     <label for="usa">Американська</label>
                 </div>
-                <div>
-                    <input id="jap" checked name="kitchen" value="japanese" type="checkbox">
+                <div class="registration-form__list__item">
+                    <input class="registration-form__list__item--choice" id="jap" checked name="kitchen" value="japanese" type="checkbox">
                     <label for="jap">Японська</label>
                 </div>
             </fieldset>
-            <fieldset>
+            <fieldset class="registration-form__list">
                 <legend>Уточнення</legend>
-                <div>
+                <div class="registration-form__list__item">
                     <label for="txt">Про себе:</label>
-                    <textarea id="txt" name="txt" rows="10" cols="50"></textarea>
+                    <textarea class="registration-form__list__item__element" id="txt" name="txt" rows="10" cols="50"></textarea>
                 </div>
             </fieldset>
-            <fieldset>
+            <fieldset class="registration-form__list">
                 <legend>Управління</legend>
-                <div>
-                    <input type="submit" value="Відправити">
+                <div class="registration-form__list__item">
+                    <input class="registration-form__list__item__element" type="submit" value="Відправити">
                 </div>
-                <div>
-                    <input type="reset" value="Скинути">
+                <div class="registration-form__list__item">
+                    <input class="registration-form__list__item__element" type="reset" value="Скинути">
                 </div>
             </fieldset>
         </form>
